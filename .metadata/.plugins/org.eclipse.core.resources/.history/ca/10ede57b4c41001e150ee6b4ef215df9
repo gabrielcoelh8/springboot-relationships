@@ -1,0 +1,5 @@
+package br.edu.ifms.demo.excecao;
+
+public class EstudanteNotFoundException {
+
+}
