@@ -34,4 +34,7 @@
     <fullyQualifiedTypeName name="jakarta.validation.Valid"/>
     <fullyQualifiedTypeName name="org.springframework.validation.BindingResult"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.support.RedirectAttributes"/>
+    <fullyQualifiedTypeName name="br.edu.ifms.workstation.repositorio.ColaboradorRepositorio"/>
+    <fullyQualifiedTypeName name="br.edu.ifms.workstation.servico.ColaboradorServico"/>
+    <fullyQualifiedTypeName name="br.edu.ifms.workstation.modelo.Colaborador"/>
 </qualifiedTypeNameHistroy>
