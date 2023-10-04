@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\aluno\Documents\GiT\many-to-one"/>
 			<item value="C:\Users\aluno\Documents\GiT\demo"/>
 		</list>
 		<list key="projectNameTemplate">

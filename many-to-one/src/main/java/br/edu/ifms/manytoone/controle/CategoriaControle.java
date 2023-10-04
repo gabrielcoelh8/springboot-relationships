@@ -35,7 +35,8 @@ public class CategoriaControle {
 		} 
 		
 		categoriaServico.gravar(categoria);
-		att.addFlashAttribute("mensagem", "salvo com sucerro");
+		att.addFlashAttribute("mensagem", "Salvo com sucesso!");
 		return "redirect:/categoria/novo";
 	}
+
 }
