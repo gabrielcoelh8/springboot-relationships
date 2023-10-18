@@ -3,7 +3,6 @@
     <fullyQualifiedTypeName name="jakarta.validation.constraints.Size"/>
     <fullyQualifiedTypeName name="br.edu.ifms.demo.repositorio.EstudanteRepositorio"/>
     <fullyQualifiedTypeName name="org.hibernate.mapping.List"/>
-    <fullyQualifiedTypeName name="java.util.Optional"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="org.hibernate.annotations.Parameter"/>
     <fullyQualifiedTypeName name="org.springframework.data.repository.query.Param"/>
@@ -12,7 +11,6 @@
     <fullyQualifiedTypeName name="br.edu.ifms.demo.repositorio.EnderecoRepositorio"/>
     <fullyQualifiedTypeName name="br.edu.ifms.demo.servico.EstudanteServico"/>
     <fullyQualifiedTypeName name="br.edu.ifms.demo.servico.EnderecoServico"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
     <fullyQualifiedTypeName name="br.edu.ifms.demo.modelo.Estudante"/>
     <fullyQualifiedTypeName name="br.edu.ifms.demo.modelo.Endereco"/>
     <fullyQualifiedTypeName name="br.edu.ifms.demo.excecao.EstudanteNotFoundException"/>
@@ -26,16 +24,11 @@
     <fullyQualifiedTypeName name="jakarta.validation.constraints.NotBlank"/>
     <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
     <fullyQualifiedTypeName name="jakarta.validation.constraints.Min"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="jakarta.persistence.ManyToOne"/>
     <fullyQualifiedTypeName name="jakarta.persistence.OneToMany"/>
-    <fullyQualifiedTypeName name="br.edu.ifms.manytoone.modelo.Produto"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="br.edu.ifms.manytoone.repositorio.CategoriaRepositorio"/>
-    <fullyQualifiedTypeName name="br.edu.ifms.manytoone.servico.CategoriaServico"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
     <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
@@ -44,4 +37,14 @@
     <fullyQualifiedTypeName name="br.edu.ifms.manytoone.modelo.Categoria"/>
     <fullyQualifiedTypeName name="org.springframework.validation.BindingResult"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.support.RedirectAttributes"/>
+    <fullyQualifiedTypeName name="br.edu.ifms.manytoone.repositorio.ProdutoRepositorio"/>
+    <fullyQualifiedTypeName name="br.edu.ifms.manytoone.servico.ProdutoServico"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="br.edu.ifms.manytoone.servico.CategoriaServico"/>
+    <fullyQualifiedTypeName name="br.edu.ifms.manytoone.modelo.Produto"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+    <fullyQualifiedTypeName name="java.util.Optional"/>
+    <fullyQualifiedTypeName name="br.edu.ifms.manytoone.excecao.ProdutoNotFoundException"/>
 </qualifiedTypeNameHistroy>

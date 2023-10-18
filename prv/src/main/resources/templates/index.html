@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+	integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet"
+	th:href="@{/bootstrap-5.3.1-dist/css/bootstrap.min.css}">
+<script th:src="@{/jquery-3.6.0-dist/jquery-3.6.0.min.js}"></script>
+<script th:src="@{/bootstrap-5.3.1-dist/js/bootstrap.min.js}"></script>
+
+
+<title>Index</title>
+</head>
+<body>
+	<div class="container">
+	
+		<div class="row my-1">
+			<div class="col-2">
+				<a th:href="@{/listar}" class="btn btn-primary">Listar</a>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col">
+				<h2>Cadastro de Jogos</h2>
+				
+				<!-- mensagem de erro -->
+				<div class="alert alert-success alert-dismissible fade show"
+					th:if="${mensagem}">
+					<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+					<span th:text="${mensagem}"></span>
+				</div>
+				
+				<!-- formulario -->
+				<form th:action="@{/gravar}"
+					th:object="${jogo}" method="post">
+					
+					<!-- campo 1 -->
+					<div class="row mb-3">
+						<label class="col-sm-1 col-form-label">Titulo:</label>
+						
+						<div class="col-sm-5">
+							<input class="form-control" type="text" th:field="*{titulo}">
+						</div>
+						
+						<div class="col-sm-5">
+							<span class="mensagem" th:if="${#fields.hasErrors('titulo')}"
+								th:errors="*{titulo}"></span>
+						</div>
+					</div>
+					<!-- END campo 1 -->
+					
+					<!--  -->
+					<div class="row mb-3">
+						<label class="col-sm-1 col-form-label">Ano de lançamento:</label>
+						
+						<div class="col-sm-5">
+							<input class="form-control" type="number" th:field="*{ano_lancamento}">
+						</div>
+						
+						<div class="col-sm-5">
+							<span class="mensagem" th:if="${#fields.hasErrors('ano_lancamento')}"
+								th:errors="*{ano_lancamento}"></span>
+						</div>
+					</div>
+					<!--  -->
+					
+					<!--  -->
+					<div class="row mb-3">
+						<label class="col-sm-1 col-form-label">Estudio:</label>
+						
+						<div class="col-sm-2">
+							<select class="form-select" th:field="*{estudio}">
+								<th:block th:each="estudio : ${estudios}">
+									<option th:value="${estudio.id}"
+										th:text="${estudio.marca}"></option>
+								</th:block>
+							</select>
+						</div>
+						
+					</div> 
+					<!--  -->
+					<input class="btn btn-primary" type="submit" value="Gravar" />
+				</form>
+				<!--  -->
+			</div>
+		
+	</div>
+	</div>
+	
+	
+</body>
+</html>
