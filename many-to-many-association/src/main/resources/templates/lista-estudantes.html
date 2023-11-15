@@ -79,8 +79,13 @@
 						&nbsp;
 						<a class="fa-regular fa-pen-to-square icon-dark"
 							th:href="@{/editar/{id}(id=${estudante.id})}"></a>						
-						</td>
-											
+						
+						&nbsp;
+						<a 
+							th:href="@{/matricula/matricular/{id}(id=${estudante.id})}">
+							Matricular
+							</a>						
+						</td>				
 					</tr>
 				</tbody>
 			</table>
